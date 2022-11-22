@@ -1,0 +1,40 @@
+/* margin */
+.m10 {
+  margin: 10px;
+}
+.m20 {
+  margin: 20px;
+}
+.m40 {
+  margin: 40px;
+}
+.m20s {
+  margin: 0px 20px;
+}
+
+.mtx {
+  margin-top: 0px !important;
+}
+.mrx {
+  margin-right: 0px !important;
+}
+.mbx {
+  margin-bottom: 0px !important;
+}
+.mlx {
+  margin-left: 0px !important;
+}
+.msx {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.p20 {
+  padding: 20px;
+}
+.p40 {
+  padding: 40px;
+}
+.p20s {
+  padding: 0px 20px;
+}
