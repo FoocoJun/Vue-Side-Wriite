@@ -1,7 +1,9 @@
 <template>
   <div>
-    <wide-banner-frame />
-    <auth-frame />
+    <div class="sFlex-Row SpaceB">
+      <wide-banner-frame />
+      <auth-frame />
+    </div>
     <post-frame />
   </div>
 </template>

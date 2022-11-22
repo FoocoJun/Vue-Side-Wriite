@@ -21,7 +21,6 @@ export default {
 
 <style scoped>
 .Frame {
-  display: inline-block;
   width: 900px;
   height: 330px;
 }

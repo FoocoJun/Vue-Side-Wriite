@@ -1,11 +1,16 @@
 <template>
-  <div class="Frame cGG m10 mrx sFlex"></div>
+  <div class="Frame cGG m10 mrx">
+    <div class="sFlex-Col">
+      <custom-button size="S" background="cG" text="로그인" />
+    </div>
+  </div>
 </template>
 
 <script>
+import CustomButton from '../purposes/common/CustomButton.vue'
 export default {
   name: 'AuthFrame',
-  components: {},
+  components: { CustomButton },
   data() {
     return {
       sampleData: ''
@@ -21,7 +26,6 @@ export default {
 
 <style scoped>
 .Frame {
-  display: inline-block;
   width: 370px;
   height: 330px;
 }

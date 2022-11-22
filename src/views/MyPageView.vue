@@ -1,7 +1,9 @@
 <template>
   <div>
-    <user-post-frame />
-    <auth-frame />
+    <div class="sFlex-Row SpaceB">
+      <user-post-frame />
+      <auth-frame />
+    </div>
     <user-character-frame />
   </div>
 </template>
