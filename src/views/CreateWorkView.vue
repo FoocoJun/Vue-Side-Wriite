@@ -1,9 +1,13 @@
 <template>
-  <div>CreateWorkView</div>
+  <div style="display: inline-block">
+    <create-work-frame />
+  </div>
 </template>
 <script>
+import CreateWorkFrame from '../components/layouts/CreateWorkFrame.vue'
+
 export default {
-  components: {},
+  components: { CreateWorkFrame },
   data() {
     return {
       sampleData: ''

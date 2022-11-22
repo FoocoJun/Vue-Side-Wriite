@@ -1,9 +1,13 @@
 <template>
-  <div>CreateCharView</div>
+  <div style="display: inline-block">
+    <create-character-frame />
+  </div>
 </template>
 <script>
+import CreateCharacterFrame from '../components/layouts/CreateCharacterFrame.vue'
+
 export default {
-  components: {},
+  components: { CreateCharacterFrame },
   data() {
     return {
       sampleData: ''

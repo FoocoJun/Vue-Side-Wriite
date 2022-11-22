@@ -1,10 +1,14 @@
 <template>
-  <div>CreatePageView</div>
   <router-view />
+  <div style="display: inline-block">
+    <help-frame />
+  </div>
 </template>
 <script>
+import HelpFrame from '../components/layouts/HelpFrame.vue'
+
 export default {
-  components: {},
+  components: { HelpFrame },
   data() {
     return {
       sampleData: ''
