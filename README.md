@@ -1,24 +1,52 @@
-# wriite
+![image](https://user-images.githubusercontent.com/85068289/203128615-1597f649-70a7-40ff-9d79-8f1fd43056eb.png)
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Wriite
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 프로젝트 기간
+### 2022년 11월 22일 - 22년 MM월 DD일
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 프로젝트 소개
+### 프로젝트 소개
+- **한줄소개**
+    
+    생성 도우미를 통해 작품 붕괴를 방지할 수 있도록 도와주는 글쓰기 웹 서비스
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- **기능**
+
+  **글쓰기.**
+  **하지만 쓸만한 도우미를 곁들인.**
+  
+- **네이밍**
+  > Wr**i**te + i(혼자가 아니야 도우미) -> wriite
+
+- **메인 컬러**
+  - 오직 회색회색 `#FFFFFF` `#F2F2F2` `#B6B6B6` `#D9D9D9` `#515151`
+
+### 프로젝트 계기
+  > 인물의 외형, 성격, 나이, 별명, 호칭 등의 특성을 등록해두면
+  글쓸때 작품붕괴를 막을 수 있지 않을까.
+  
+
+### 중점
+ - **Vue3 손에 익히기(상태관리, 레이아웃 우선)**
+ - 지난 프로젝트 미약점 보완
+    - 사용자에게 물음표 Hover를 통해 사용법 충분히 제공
+    
+### 꿍시렁
+>도우미 백엔드 어떡하지.. 서버리스.. NestJs.. 일단 진행<br/>
+컴포넌트 미리 좀 세세하게 나눠둘걸..
+  
+  
+
+### 서비스 MVP
+![image](https://user-images.githubusercontent.com/85068289/203125865-ed9b17b6-67f1-4272-85b7-8b8b39e88f38.png)
+
+
+<br/>
+
+![image](https://user-images.githubusercontent.com/85068289/203123823-b89061fb-eae9-4e1c-a009-ca8c4b7d5b7b.png)
+
+
+
+
