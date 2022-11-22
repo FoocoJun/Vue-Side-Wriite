@@ -1,9 +1,14 @@
 <template>
-  <div>WorkDetailView</div>
+  <div>
+    <work-detail-frame />
+    <work-time-line-fram />
+  </div>
 </template>
 <script>
+import WorkDetailFrame from '@/components/layouts/WorkDetailFrame.vue'
+import WorkTimeLineFram from '@/components/layouts/WorkTimeLineFram.vue'
 export default {
-  components: {},
+  components: { WorkDetailFrame, WorkTimeLineFram },
   data() {
     return {
       sampleData: ''
