@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import CreateCharacterFrame from '../components/layouts/CreateCharacterFrame.vue'
+import CreateCharacterFrame from '@/components/layouts/CreateCharacterFrame.vue'
 
 export default {
   components: { CreateCharacterFrame },

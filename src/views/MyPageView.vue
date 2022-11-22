@@ -7,8 +7,8 @@
 </template>
 <script>
 import UserPostFrame from '@/components/layouts/UserPostFrame.vue'
-import AuthFrame from '../components/layouts/AuthFrame.vue'
-import UserCharacterFrame from '../components/layouts/UserCharacterFrame.vue'
+import AuthFrame from '@/components/layouts/AuthFrame.vue'
+import UserCharacterFrame from '@/components/layouts/UserCharacterFrame.vue'
 
 export default {
   components: { UserPostFrame, AuthFrame, UserCharacterFrame },

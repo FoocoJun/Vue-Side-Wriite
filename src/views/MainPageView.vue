@@ -6,9 +6,9 @@
   </div>
 </template>
 <script>
-import WideBannerFrame from '../components/layouts/WideBannerFrame.vue'
-import AuthFrame from '../components/layouts/AuthFrame.vue'
-import PostFrame from '../components/layouts/PostFrame.vue'
+import WideBannerFrame from '@/components/layouts/WideBannerFrame.vue'
+import AuthFrame from '@/components/layouts/AuthFrame.vue'
+import PostFrame from '@/components/layouts/PostFrame.vue'
 
 export default {
   components: { WideBannerFrame, AuthFrame, PostFrame },

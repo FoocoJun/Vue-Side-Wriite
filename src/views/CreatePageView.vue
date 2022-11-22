@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import HelpFrame from '../components/layouts/HelpFrame.vue'
+import HelpFrame from '@/components/layouts/HelpFrame.vue'
 
 export default {
   components: { HelpFrame },

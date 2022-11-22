@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import CreateWorkFrame from '../components/layouts/CreateWorkFrame.vue'
+import CreateWorkFrame from '@/components/layouts/CreateWorkFrame.vue'
 
 export default {
   components: { CreateWorkFrame },
