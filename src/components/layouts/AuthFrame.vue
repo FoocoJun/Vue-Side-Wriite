@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isLogin" class="Auth Frame cGG m10 mrx">
+  <div v-if="!isLogin" class="Frame cGG m10 mrx">
     <div class="sFlex-Row SpaceA sh15">
       {{ SignInOrSignUp }}
       <auth-switch-card @response="(val) => (isSwitchSignUp = val)" />
