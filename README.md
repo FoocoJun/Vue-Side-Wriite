@@ -49,4 +49,24 @@
 
 
 
+### 1일차
+![image](https://user-images.githubusercontent.com/85068289/203612647-80f80f9d-c162-41d1-98e8-9e87f817bf62.png)
+
+어라. Vue는 커녕 CSS가 기억이 안난다. 라우팅 어떡하지.<-아직 /create 제대로 없어서 워닝 뜸
+
+![0-wriite-layout](https://user-images.githubusercontent.com/85068289/203612512-407496d2-63b9-4552-87ae-3de644bd3e3f.gif)
+
+### 2일차
+프로젝트 안하고 로그인만 해도 비동기통신에 상태관리에 레이아웃에 페이지 전환까지 연습 다 되겠는데...
+
+![1-wriite-Auth](https://user-images.githubusercontent.com/85068289/203612711-9deb8578-b7ae-46f9-9876-d3fc53dc8b95.gif)
+
+회원가입 네개 뚱뚱해. 페이지 만들계획 없으니 2개로 줄이자. 대신 커스텀 알림창을 꼭 만들어보자.
+
+![2-wriite-ReadyToFire(base)](https://user-images.githubusercontent.com/85068289/203612998-29fca666-58c2-4ebc-9a6b-bbe921e142fd.gif)
+
+### 3일차(새벽)
+
+![3-wriite-Banner](https://user-images.githubusercontent.com/85068289/203613059-f159a9be-ceaa-448a-a7d2-da39cd4c6016.gif)
+
 
