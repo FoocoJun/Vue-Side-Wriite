@@ -11,10 +11,34 @@
   flex-direction: column;
   align-items: center;
 }
+.SpaceA {
+  justify-content: space-around;
+}
 .SpaceB {
   justify-content: space-between;
 }
 
 .pCenter {
   margin: 0px auto;
+}
+
+.sMax {
+  width: 100%;
+  height: 100%;
+}
+.sh15 {
+  width: 100%;
+  height: 15%;
+}
+.sh20 {
+  width: 100%;
+  height: 20%;
+}
+.sh85 {
+  width: 100%;
+  height: 85%;
+}
+.sh80 {
+  width: 100%;
+  height: 80%;
 }

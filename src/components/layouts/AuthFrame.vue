@@ -1,19 +1,30 @@
 <template>
   <div class="Frame cGG m10 mrx">
-    <div class="sFlex-Col">
-      <custom-button size="S" background="cG" text="로그인" />
+    <div class="sFlex-Row SpaceA sh15">
+      {{ AuthCardStatus }}
+      <auth-switch-card @response="(val) => (isSignUp = val)" />
     </div>
+    <sign-in-card v-if="!isSignUp" />
+    <sign-up-card v-else />
   </div>
 </template>
 
 <script>
-import CustomButton from '../purposes/common/CustomButton.vue'
+import AuthSwitchCard from './cards/AuthSwitchCard.vue'
+import SignInCard from './cards/SignInCard.vue'
+import SignUpCard from './cards/SignUpCard.vue'
+
 export default {
   name: 'AuthFrame',
-  components: { CustomButton },
+  components: { SignInCard, SignUpCard, AuthSwitchCard },
   data() {
     return {
-      sampleData: ''
+      isSignUp: false
+    }
+  },
+  computed: {
+    AuthCardStatus() {
+      return this.isSignUp ? '회원가입' : '로그인'
     }
   },
   setup() {},
