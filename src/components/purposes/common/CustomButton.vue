@@ -28,6 +28,7 @@ export default {
   border-radius: 40px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .L {
