@@ -5,11 +5,14 @@
       :type="type"
       :placeholder="placeHolder"
       v-model="value"
+      @change="$emit('response', value)"
+      required
     />
   </div>
 </template>
 <script>
 export default {
+  emits: ['response'],
   components: {},
   props: {
     type: String,
