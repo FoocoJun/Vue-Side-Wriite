@@ -17,6 +17,7 @@ export default {
 @import url('./assets/css/main.css');
 @import url('./assets/css/structure.css');
 @import url('./assets/css/interval.css');
+@import url('./assets/css/auth.css');
 
 #app {
   width: 1280px;
