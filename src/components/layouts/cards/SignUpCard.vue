@@ -1,27 +1,17 @@
 <template>
-  <div class="sFlex-Col SpaceA sh85">
+  <form class="sFlex-Col SpaceA sMax">
     <auth-input
       inputFor="E-mail"
-      type="e-mail"
+      type="email"
       @response="(val) => (authSignUpEmailInput = val)"
-    />
-    <auth-input
-      inputFor="ID"
-      type="text"
-      @response="(val) => (authSignUpIDInput = val)"
     />
     <auth-input
       inputFor="PW"
       type="password"
       @response="(val) => (authSignUpPWInput = val)"
     />
-    <auth-input
-      inputFor="PWCheck"
-      type="password"
-      @response="(val) => (authSignUpPWCInput = val)"
-    />
     <custom-button size="S" background="cG" text="회원가입" />
-  </div>
+  </form>
 </template>
 
 <script>
@@ -34,9 +24,7 @@ export default {
   data() {
     return {
       authSignUpEmailInput: '',
-      authSignUpIDInput: '',
-      authSignUpPWInput: '',
-      authSignUpPWCInput: ''
+      authSignUpPWInput: ''
     }
   },
   computed: {},

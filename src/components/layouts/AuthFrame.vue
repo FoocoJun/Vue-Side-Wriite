@@ -1,11 +1,14 @@
 <template>
-  <div class="Frame cGG m10 mrx">
+  <div class="Auth Frame cGG m10 mrx">
     <div class="sFlex-Row SpaceA sh15">
       {{ AuthCardStatus }}
       <auth-switch-card @response="(val) => (isSignUp = val)" />
     </div>
-    <sign-in-card v-if="!isSignUp" />
-    <sign-up-card v-else />
+    <div class="sFlex-Col SpaceA sh70">
+      <sign-in-card v-if="!isSignUp" />
+      <sign-up-card v-else />
+    </div>
+    <div class="sFlex SpaceA m10">소셜로그인</div>
   </div>
 </template>
 

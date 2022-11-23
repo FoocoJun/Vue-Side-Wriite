@@ -1,18 +1,17 @@
 <template>
-  <div class="sFlex-Col SpaceA sh85">
+  <form class="sFlex-Col SpaceA sMax">
     <auth-input
-      inputFor="ID"
-      type="text"
-      @response="(val) => (authSignInIDInput = val)"
+      inputFor="E-mail"
+      type="email"
+      @response="(val) => (authSignInEmailInput = val)"
     />
     <auth-input
       inputFor="PW"
       type="password"
-      @response="(val) => (authPwInput = val)"
+      @response="(val) => (authSignInPwInput = val)"
     />
     <custom-button size="S" background="cG" text="로그인" />
-    <div>소셜로그인</div>
-  </div>
+  </form>
 </template>
 
 <script>
@@ -24,7 +23,7 @@ export default {
   components: { CustomButton, AuthInput },
   data() {
     return {
-      authSignInIDInput: '',
+      authSignInEmailInput: '',
       authSignInPWInput: ''
     }
   },
