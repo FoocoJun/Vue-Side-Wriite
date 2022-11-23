@@ -39,6 +39,17 @@
   font-size: 12px;
 }
 
+.Frame {
+  position: relative;
+}
+
 .pointer {
   cursor: pointer;
+}
+
+.LeftButton {
+  transform: rotate(-45deg);
+}
+.RightButton {
+  transform: rotate(45deg);
 }

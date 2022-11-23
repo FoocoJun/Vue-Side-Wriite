@@ -1,0 +1,58 @@
+.bPop-under {
+  width: 720px;
+  height: 300px;
+}
+
+.bHalf-page {
+  width: 300px;
+  height: 600px;
+}
+
+.bWide-skyscraper {
+  width: 160px;
+  height: 600px;
+}
+.bSkyscraper {
+  width: 120px;
+  height: 600px;
+}
+
+.bFull {
+  width: 468px;
+  height: 60px;
+}
+.bHalf {
+  width: 234px;
+  height: 60px;
+}
+.bVertical {
+  width: 120px;
+  height: 240px;
+}
+
+.bSquare-popup {
+  width: 250px;
+  height: 250px;
+}
+
+.bRectangle {
+  width: 180px;
+  height: 150px;
+}
+.bLarge-rectangle {
+  width: 336px;
+  height: 280px;
+}
+.bMedium-rectangle {
+  width: 300px;
+  height: 250px;
+}
+.bVertical-rectangle {
+  width: 240px;
+  height: 400px;
+}
+
+.bMicro-bar {
+  width: 88px;
+  height: 31px;
+}

@@ -17,6 +17,9 @@
 .SpaceB {
   justify-content: space-between;
 }
+.sCenter {
+  justify-content: center;
+}
 
 .pCenter {
   margin: 0px auto;
