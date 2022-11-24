@@ -8,9 +8,9 @@
       <sign-in-card v-if="!isSwitchSignUp" />
       <sign-up-card v-else />
     </div>
-    <!-- 로그인 확인을 위한 임시 로그인 이벤트 -->
-    <div class="sFlex SpaceA m10 pointer" @click="isLogin = !isLogin">
-      소셜로그인
+    <!-- 쏘샬 로그인 완성! w/ Firebase -->
+    <div class="sFlex SpaceA m10 pointer" @click="googleSessionLogin">
+      구글 로그인
     </div>
   </div>
   <!-- 경로가 /user/:username 이거나 로그인을 했을 경우 -->
@@ -30,20 +30,22 @@ export default {
   components: { SignInCard, SignUpCard, AuthSwitchCard, MyNameCard },
   data() {
     return {
-      isSwitchSignUp: false,
-      isLogin: false
+      isSwitchSignUp: false
     }
   },
   computed: {
     SignInOrSignUp() {
       return this.isSwitchSignUp ? '회원가입' : '로그인'
+    },
+    isLogin() {
+      return this.$store.state.auth.isLogin
     }
   },
-  setup() {},
-  created() {},
-  mounted() {},
-  unmounted() {},
-  methods: {}
+  methods: {
+    googleSessionLogin() {
+      return this.$store.dispatch('auth/googleSessionLogin')
+    }
+  }
 }
 </script>
 

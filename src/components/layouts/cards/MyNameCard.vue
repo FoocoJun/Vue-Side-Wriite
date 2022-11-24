@@ -1,7 +1,7 @@
 <template>
   <div class="sFlex-Col SpaceA sMax">
-    <div class="UserImg-L cG" />
-    <div class="tM">송하준님 환영합니다.</div>
+    <img class="UserImg-L cG" :src="userData.photoURL" alt="프로필 사진" />
+    <div class="tM">{{ userData.displayName }}님 환영합니다.</div>
     <div class="sFlex-Row SpaceB">
       <custom-button class="m10" background="cG" size="S" text="글 관리하기" />
       <custom-button class="m10" background="cG" size="S" text="마이 페이지" />
@@ -17,7 +17,12 @@ export default {
   data() {
     return {}
   },
-  computed: {},
+  computed: {
+    userData() {
+      return this.$store.state.auth.user
+    }
+  },
+  watch: {},
   setup() {},
   created() {},
   mounted() {},
