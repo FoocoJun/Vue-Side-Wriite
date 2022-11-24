@@ -28,7 +28,7 @@ export const takeUserDataFB = async (uid) => {
     if (docSnap.exists()) {
       console.log('Document data:', docSnap.data())
       console.log('저장 유저 데이터가 호출되었습니다.')
-      return docSnap.data()
+      return { ...docSnap.data() }
     } else {
       // doc.data() will be undefined in this case
       console.log('No such document!')

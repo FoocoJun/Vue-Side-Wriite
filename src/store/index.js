@@ -7,11 +7,11 @@ export default createStore({
   mutations: {},
   actions: {
     // 모듈을 리팩토링 할 때 마다 사용한 곳을 직접 찾아가는 것이 불편하였음
-    emailSignUp(_, signInData) {
-      this.dispatch('auth/emailAuth/emailSessionLogin', signInData)
-    },
-    emailSessionLogin(_, signUpData) {
+    emailSignUp(_, signUpData) {
       this.dispatch('auth/emailAuth/emailSignUp', signUpData)
+    },
+    emailSessionLogin(_, signInData) {
+      this.dispatch('auth/emailAuth/emailSessionLogin', signInData)
     },
     googleSessionLogin() {
       this.dispatch('auth/googleAuth/googleSessionLogin')

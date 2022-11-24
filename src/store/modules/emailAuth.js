@@ -18,28 +18,26 @@ export default {
   getters: {},
   mutations: {},
   actions: {
-    emailSessionLogin(_, authData) {
+    emailSessionLogin(_, signInData) {
       setPersistence(auth, browserSessionPersistence)
         .then(() => {
-          return this.dispatch('auth/emailAuth/emailSignIn', authData)
+          return this.dispatch('auth/emailAuth/emailSignIn', signInData)
         })
         .catch((error) => {
           // Handle Errors here.
-          console.log(error.code)
+          console.log(error)
         })
     },
     emailSignIn(_, signInData) {
-      signInWithEmailAndPassword(auth, ...signInData)
-        .then((result) => {
-          console.log('asd')
+      signInWithEmailAndPassword(auth, signInData.email, signInData.password)
+        .then(async (result) => {
           // 유저 UID와 일치하는 사진과 아이디 챙겨야 함
           const userUid = result.user.uid
-          const userData = takeUserDataFB(userUid)
-          console.log(userData)
+          const userData = await takeUserDataFB(userUid)
           this.commit('auth/keepUserData', userData)
         })
         .catch((error) => {
-          console.log(error.code)
+          console.log(error)
         })
     },
     emailSignUp(_, signUpData) {

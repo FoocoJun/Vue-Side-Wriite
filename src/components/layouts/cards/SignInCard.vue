@@ -8,7 +8,7 @@
     <auth-input
       inputFor="PW"
       type="password"
-      @response="(val) => (authSignInPwInput = val)"
+      @response="(val) => (authSignInPWInput = val)"
     />
     <custom-button size="S" background="cG" text="로그인" />
   </form>
