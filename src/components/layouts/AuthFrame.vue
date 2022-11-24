@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     googleSessionLogin() {
-      return this.$store.dispatch('auth/googleSessionLogin')
+      return this.$store.dispatch('googleSessionLogin')
     }
   }
 }

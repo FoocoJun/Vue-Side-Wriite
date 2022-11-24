@@ -16,7 +16,7 @@ export default {
   components: {},
   props: {
     type: String,
-    inputFor: 'ID' || 'PW' || 'E-mail' || 'PWCheck'
+    inputFor: 'Name' || 'PW' || 'E-mail' || 'PWCheck'
   },
   data() {
     return {
@@ -26,8 +26,8 @@ export default {
   computed: {
     placeHolder() {
       switch (this.inputFor) {
-        case 'ID':
-          return '아이디를 입력해주세요.'
+        case 'Name':
+          return '닉네임을 입력해주세요.'
         case 'PW':
           return '비밀번호를 입력해주세요.'
         case 'E-mail':

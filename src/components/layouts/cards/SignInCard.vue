@@ -1,5 +1,5 @@
 <template>
-  <form class="sFlex-Col SpaceA sMax">
+  <form class="sFlex-Col SpaceA sMax" @submit.prevent="signIn">
     <auth-input
       inputFor="E-mail"
       type="email"
@@ -27,11 +27,22 @@ export default {
       authSignInPWInput: ''
     }
   },
-  computed: {},
+  computed: {
+    signInData() {
+      return {
+        email: this.authSignInEmailInput,
+        password: this.authSignInPWInput
+      }
+    }
+  },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+    signIn() {
+      this.$store.dispatch('emailSessionLogin', this.signInData)
+    }
+  }
 }
 </script>

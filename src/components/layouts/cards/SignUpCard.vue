@@ -1,9 +1,14 @@
 <template>
-  <form class="sFlex-Col SpaceA sMax">
+  <form class="sFlex-Col SpaceA sMax" @submit.prevent="signUp">
     <auth-input
       inputFor="E-mail"
       type="email"
       @response="(val) => (authSignUpEmailInput = val)"
+    />
+    <auth-input
+      inputFor="Name"
+      type="text"
+      @response="(val) => (authSignUpUserNameInput = val)"
     />
     <auth-input
       inputFor="PW"
@@ -24,14 +29,29 @@ export default {
   data() {
     return {
       authSignUpEmailInput: '',
+      authSignUpUserNameInput: '',
       authSignUpPWInput: ''
     }
   },
-  computed: {},
+  computed: {
+    signUpData() {
+      return {
+        email: this.authSignUpEmailInput,
+        displayName: this.authSignUpUserNameInput,
+        password: this.authSignUpPWInput,
+        photoURL: '',
+        uid: ''
+      }
+    }
+  },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+    signUp() {
+      this.$store.dispatch('emailSignUp', this.signUpData)
+    }
+  }
 }
 </script>

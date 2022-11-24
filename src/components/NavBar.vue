@@ -19,7 +19,7 @@
     <div v-else class="m40 tM">
       <span class="m20 pointer">글 관리</span> |
       <span class="m20 pointer">마이 페이지</span> |
-      <span class="m20 pointer" @click="googleLogout">로그아웃</span>
+      <span class="m20 pointer" @click="logOut">로그아웃</span>
     </div>
   </div>
 </template>
@@ -32,8 +32,8 @@ export default {
     }
   },
   methods: {
-    googleLogout() {
-      return this.$store.dispatch('auth/googleLogout')
+    logOut() {
+      return this.$store.dispatch('authLogOut')
     }
   }
 }
