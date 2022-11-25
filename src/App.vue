@@ -5,11 +5,16 @@
 
 <script>
 import NavBar from './components/NavBar.vue'
+import $authCheckAndContinue from '@/mixins/authCheckAndContinue'
 
 export default {
   components: {
     NavBar
-  }
+  },
+  mounted() {
+    this.$authCheckAndContinue()
+  },
+  mixins: [$authCheckAndContinue]
 }
 </script>
 

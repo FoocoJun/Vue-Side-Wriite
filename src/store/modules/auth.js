@@ -14,10 +14,13 @@ export default {
   getters: {},
   mutations: {
     keepUserData(state, userData) {
+      const JsonUserData = JSON.stringify(userData)
+      window.sessionStorage.setItem('LoginData', JsonUserData)
       state.user = userData
       state.isLogin = true
     },
     clearUserData(state) {
+      window.sessionStorage.removeItem('LoginData')
       state.user = { displayName: '', email: '', photoURL: '', uid: '' }
       state.isLogin = false
     }
